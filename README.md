@@ -79,44 +79,56 @@ Estudante de Análise e Desenvolvimento de Sistemas na Fatec Zona Leste.
 ## 🏗️ Estrutura do Projeto
 
 ```bash
-src/
+pokemon/
 │
-├── app/
-│   ├── (auth)/
-│   │   ├── index.tsx
-│   │   ├── register.tsx
+├── src/
+│   │
+│   ├── app/
+│   │   │
+│   │   ├── (auth)/
+│   │   │   ├── _layout.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── register.tsx
+│   │   │
+│   │   ├── (app)/
+│   │   │   ├── _layout.tsx
+│   │   │   ├── pokedex.tsx
+│   │   │   ├── team.tsx
+│   │   │   ├── battle.tsx
+│   │   │   ├── perfil.tsx
+│   │   │   └── loading.tsx
+│   │   │
+│   │   ├── dashboard.tsx
 │   │   └── _layout.tsx
 │   │
-│   ├── (app)/
-│   │   ├── pokedex.tsx
-│   │   ├── team.tsx
-│   │   ├── battle.tsx
-│   │   ├── perfil.tsx
-│   │   ├── loading.tsx
-│   │   └── _layout.tsx
+│   ├── component/
+│   │   ├── card/
+│   │   ├── list/
+│   │   ├── pokemonStyle/
+│   │   └── ...
+│   │
+│   ├── context/
+│   │   └── AuthContext.tsx
+│   │
+│   ├── integration/
+│   │   ├── authIntegration.ts
+│   │   ├── pokemonIntegration.ts
+│   │   └── teamIntegration.ts
+│   │
+│   ├── @types/
+│   │   └── pokemon.ts
+│   │
+│   ├── constants/
+│   │
+│   └── assets/
 │
-├── component/
-│   ├── card/
-│   ├── list/
-│   ├── pokemonStyle/
-│   └── ...
-│
-├── context/
-│   └── AuthContext.tsx
-│
-├── integration/
-│   ├── authIntegration.ts
-│   ├── pokemonIntegration.ts
-│   └── teamIntegration.ts
-│
-├── @types/
-│   └── pokemon.ts
-│
-├── assets/
-│   ├── images/
-│   └── icons/
-│
-└── constants/
+├── App.js
+├── index.js
+├── app.json
+├── package.json
+├── tsconfig.json
+├── banco.json
+└── README.md
 ```
 
 ---
